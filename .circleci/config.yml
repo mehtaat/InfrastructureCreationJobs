@@ -14,9 +14,9 @@ jobs:
             aws cloudformation deploy \
             --template-file template.yml \
             --stack-name my-stack \
-            --region AWS_REGION_NAME \
-            --access-key AWS_ACCESS_KEY \
-            --secret-key: AWS_ACCESS_SECRET
+            --region AWS_DEFAULT_REGION \
+            --access-key AWS_ACCESS_KEY_ID \
+            --secret-key: AWS_SECRET_ACCESS_KEY
   
 workflows:
   my-workflow:
