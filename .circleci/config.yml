@@ -15,8 +15,8 @@ jobs:
             --template-file template.yml \
             --stack-name my-stack \
             --region AWS_REGION_NAME \
-            --access-key-id AWS_ACCESS_KEY \
-            --secret-access-key: AWS_ACCESS_SECRET
+            --access-key AWS_ACCESS_KEY \
+            --secret-key: AWS_ACCESS_SECRET
   
 workflows:
   my-workflow:
